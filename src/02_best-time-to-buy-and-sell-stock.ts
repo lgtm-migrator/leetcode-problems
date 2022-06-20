@@ -26,7 +26,7 @@ export function maxProfit (prices: number[]): number {
     let maxProfitToday = 0
     // stocks must be sold at a future date
     for (const day2 of prices.slice(idx + 1)) {
-      if ((day2 - day1) > maxProfitToday) maxProfitToday = day2 - day1
+      if (day2 - day1 > maxProfitToday) maxProfitToday = day2 - day1
     }
 
     if (maxProfitToday > maxProfit) maxProfit = maxProfitToday
