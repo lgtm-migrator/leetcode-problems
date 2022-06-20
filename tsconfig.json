@@ -1,0 +1,17 @@
+{
+  "compileOnSave": false,
+  "extends": "@tmuniversal/ts/config",
+  "compilerOptions": {
+    "outDir": "./build",
+    "target": "ESNEXT",
+    "lib": ["ESNext"],
+    "declaration": false,
+    "sourceMap": true,
+    "inlineSources": true,
+    "inlineSourceMap": false,
+    "strictNullChecks": false,
+    "types": ["node", "jest"]
+  },
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": [".yarn", "node_modules", "bin", "packages-cache", "build"]
+}
