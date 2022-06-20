@@ -6,7 +6,7 @@ describe('#twoSum unoptimized', () => {
     expect(twoSum([3, 2, 4], 6)).toEqual([1, 2])
     expect(twoSum([3, 3], 6)).toEqual([0, 1])
   })
-  
+
   it('should return an empty array if no two numbers add up to the target', () => {
     expect(twoSum([1, 2], 4)).toEqual([])
   })
